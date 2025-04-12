@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>ECS Website Project</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <script type="text/javascript" src="script.js" defer></script>
+    </head>
+
+    <body>
+        <!--NAV BAR-->
+        <ul>
+            <!--home-->
+            <li><a href="index.html">Home</a></li>
+            <!--recipes-->
+            <li>
+                <div class="dropdown">
+                    <button class="recipesBtn">Recipes
+                      <i>&#9660;</i>
+                    </button>
+                <div class="dropdown-content">
+                    <a href="frenchtoast.html">French Toast</a>
+                    <a href="yellowcurry.html">Yellow Curry</a>
+                    <a href="greenpasta.html">Green Pasta</a>
+                </div>
+            </li>
+            <!--about-->
+            <li><a href="about.html">About</a></li>
+        </ul>
+        
+        <!--DESCRIPTION-->
+        <h2>About</h2>
+        <p>Radhika is a junior at CCA. She is passionate about gaining new skills in the kitchen while leading a healthy lifestyle!<br>
+        This is her 3rd website which she created for Exploring Computer Science. She previously coded a personal blog and a mental maths game for AP CSP.</p>
+
+        <hr>
+
+        <!--EMAIL UPDATES-->
+        <h4>Sign up for email updates:</h4>
+        <input type="text" id="yourName" name="yourName" placeholder="Name"><br>
+        <input type="email" id="yourEmail" name="yourEmail" placeholder="Email"> <br><br>
+        <button id="submitBtn" class="btn">Submit</button><br>
+        <p style="color:#8c2648" id="thankYouDisplay"></p>
+
+
+        <!--FOOTER-->
+        <br><div class="footer">
+            <p>© 2025 Radhika Parkhi</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,134 @@
+<!--
+File name: frenchtoast.html
+
+ECS Front-End Dev Project: Radhika's Recipes
+Description: This program uses HTML, JS, and CSS to create a recipe blog.
+
+*Developer: Radhika Parkhi*
+
+Version: 1.0
+Last modified: 04/11/2024
+-->
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Radhika's Recipes - French Toast</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <script type="text/javascript" src="script.js" defer></script>
+    </head>
+
+    <body>
+        <!--NAV BAR-->
+        <ul>
+            <!--home-->
+            <li><a href="index.html">Home</a></li>
+
+            <!--recipes-->
+            <li>
+                <div class="dropdown">
+                    <button class="recipesBtn">Recipes
+                      <i class="caret-down">&#9660;</i>
+                    </button>
+                <div class="dropdown-content">
+                    <a href="frenchtoast.html">French Toast</a>
+                    <a href="yellowcurry.html">Yellow Curry</a>
+                    <a href="greenpasta.html">Green Pasta</a>
+                </div>
+            </li>
+
+            <!--about-->
+            <li><a href="about.html">About</a></li>
+        </ul>
+
+
+        <!--MAIN CONTENT-->
+        <!--title-->
+        <h2>French Toast</h2>
+
+        <!--rating-->
+        <span onclick="gfg(1)"
+                class="star">★
+        </span>
+        <span onclick="gfg(2)"
+                class="star">★
+        </span>
+        <span onclick="gfg(3)"
+                class="star">★
+        </span>
+        <span onclick="gfg(4)"
+                class="star">★
+        </span>
+        <span onclick="gfg(5)"
+                class="star">★
+        </span><br><br>
+
+        <!--description (grid)-->
+        <div class="gridContainer">
+            <img class="image" style="width: 200px" src="images/frenchtoast.jpeg">
+            <div class="desc">
+                <p style="margin-top: 40px;"><b>Cuisine: French</b></p>
+                <p>Serves 2, serving size: 2 slices</p>
+                <p><i>Total time: 40 mins</i><p><br>
+            </div>
+        </div><br>
+
+
+        <!--INGREDIENTS-->
+        <!--title & scaling (flexbox)-->
+        <div class="flexContainer">
+            <h3>Ingredients</h3>
+            <button id="0.5x" class="scaleBtn">0.5x</button>
+            <button id="1x" class="scaleBtn">1x</button>
+            <button id="2x" class="scaleBtn">2x</button>
+        </div>
+    
+        <!--list-->
+        <input type="checkbox" id="bread" name="ingredient" value="4">
+        <label id="breadLabel" for="bread">4 slices brioche bread</label><br>
+
+        <input type="checkbox" id="egg" name="ingredient" value="1/2">
+        <label id="eggLabel" for="egg">½ cup <a href=https://www.ju.st/>JUST Egg</a></label><br>
+
+        <input type="checkbox" id="milk" name="ingredient" value="1/4">
+        <label for="milk">1/4 cup milk</label><br>
+
+        <input type="checkbox" id="sugar" name="ingredient" value="1">
+        <label for="sugar">1 tbsp sugar</label><br>
+
+        <input type="checkbox" id="vanilla" name="ingredient" value="1/2">
+        <label for="vanilla">1/2 tsp vanilla extract</label><br>
+
+        <input type="checkbox" id="cinnamon" name="ingredient" value="1/2">
+        <label for="cinnamon">1/2 teaspoon cinnamon</label><br>
+        
+        <input type="checkbox" id="butter" name="ingredient" value="4">
+        <label for="butter">4 pats of butter</label><br>
+
+        
+        <!--INSTRUCTIONS-->
+        <h3>Instructions</h3>
+        <ol>
+            <li>Bake bread for 10 min at 300°F in the oven/airfryer.</li>
+            <li>Mix together JUST Egg, milk, sugar, vanilla, and cinnamon in a bowl.</li>
+            <li>In a shallow dish, pour custard over bread, making sure to cover all sides. Soak for 8 minutes on each side.</li>
+            <li>Melt butter on a skillet on medium heat.</li>
+            <li>Pick up a slice of bread and let excess custard drip into the dish before placing it onto the skillet. Cook each slice for 2 mins on each side until golden brown.</li>
+            <li>Serve hot with maple syrup, powdered sugar, berries, or other toppings of choice!</li>
+        </ol><br>
+        <hr>
+
+
+        <!--NOTE-->
+        <h4>Based on the <a href=https://www.ju.st/cook/french-toast>recipe</a> from the JUST Egg online cookbook!</h4>
+
+
+        <!--FOOTER-->
+        <br><div class="footer">
+            <p>© 2025 Radhika Parkhi</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,129 @@
+<!--
+File name: greenpasta.html
+
+ECS Front-End Dev Project: Radhika's Recipes
+Description: This program uses HTML, JS, and CSS to create a recipe blog.
+
+*Developer: Radhika Parkhi*
+
+Version: 1.0
+Last modified: 04/11/2024
+-->
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Radhika's Recipes - Green Pasta</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <script type="text/javascript" src="script.js" defer></script>
+    </head>
+
+    <body>
+        <!--NAV BAR-->
+        <ul>
+            <!--home-->
+            <li><a href="index.html">Home</a></li>
+
+            <!--recipes-->
+            <li>
+                <div class="dropdown">
+                    <button class="recipesBtn">Recipes
+                      <i class="caret-down">&#9660;</i>
+                    </button>
+                <div class="dropdown-content">
+                    <a href="frenchtoast.html">French Toast</a>
+                    <a href="yellowcurry.html">Yellow Curry</a>
+                    <a href="greenpasta.html">Green Pasta</a>
+                </div>
+            </li>
+
+            <!--about-->
+            <li><a href="about.html">About</a></li>
+        </ul>
+
+
+        <!--MAIN CONTENT-->
+        <!--title-->
+        <h2>Green Pasta</h2>
+
+        <!--rating-->
+        <span onclick="gfg(1)"
+                class="star">★
+        </span>
+        <span onclick="gfg(2)"
+                class="star">★
+        </span>
+        <span onclick="gfg(3)"
+                class="star">★
+        </span>
+        <span onclick="gfg(4)"
+                class="star">★
+        </span>
+        <span onclick="gfg(5)"
+                class="star">★
+        </span><br><br>
+
+        <!--description (grid)-->
+        <div class="gridContainer">
+            <img class="image" src="images/greenpasta.jpg" style="width: 200px">
+            <div class="desc">
+                <p style="margin-top: 40px;"><b>Cuisine: Italian</b></p>
+                <p>Serves 2, serving size: 2 bowls</p>
+                <p><i>Total time: 30 mins</i><p><br>
+            </div>
+        </div><br>
+        
+
+        <!--INGREDIENTS-->
+        <!--title & scaling (flexbox)-->
+        <div class="flexContainer">
+            <h3>Ingredients</h3>
+            <button id="0.5x" class="scaleBtn">0.5x</button>
+            <button id="1x" class="scaleBtn">1x</button>
+            <button id="2x" class="scaleBtn">2x</button>
+        </div>
+
+        <!--list-->
+        <input type="checkbox" id="pasta" name="ingredient" value="6">
+        <label for="pasta">6 oz pasta of choice</label><br>
+            
+        <input type="checkbox" id="pesto" name="ingredient" value="1/3">
+        <label for="pesto">1/3 cup pesto</label><br>
+
+        <input type="checkbox" id="broccoli" name="ingredient" value="3">
+        <label for="broccoli">3 cups broccoli</label><br>
+        
+        <input type="checkbox" id="spinach" name="ingredient" value="1">
+        <label for="spinach">1 oz spinach</label><br>
+
+        <input type="checkbox" id="oil" name="ingredient" value="1">
+        <label for="oil">1 tbsp olive oil</label><br>
+        
+        <input type="checkbox" id="garlic" name="ingredient" value="2">
+        <label for="garlic">2 cloves garlic</label><br>
+
+        <input type="checkbox" id="parmesan" name="ingredient" value="1/4 cup">
+        <label for="parmesan">1/4 cup parmesan</label><br>
+
+        
+        <!--INSTRUCTIONS-->
+        <h3>Instructions</h3>
+        <ol>
+            <li>Boil pasta in a pot according to directions on packaging, or until al dente.</li>
+            <li>Meanwhile, bring a large saucepan to medium heat. Add olive oil and minced garlic, watching closely so it does not burn. Cook until fragrant.</li>
+            <li>Add zucchini and broccoli. Stir fry for 2-3 mins. Optional: use pasta water to lightly steam veggies.</li>
+            <li>Drain pasta and add to the pan. Add pesto. Season with salt, pepper, & red crushed pepper to taste. Mix well until combined.</li>
+            <li>Serve warm in a bowl with parmesan over top.</li>
+        </ol>
+        <hr class="hrInvis">
+
+        
+        <!--FOOTER-->
+        <br><br><div class="footer">
+            <p>© 2025 Radhika Parkhi</p>
+        </div>
+    </body>
+</html>
