@@ -1,0 +1,125 @@
+<!--
+File name: yellowcurry.html
+
+ECS Front-End Dev Project: Radhika's Recipes
+Description: This program uses HTML, JS, and CSS to create a recipe blog.
+
+*Developer: Radhika Parkhi*
+
+Version: 1.0
+Last modified: 04/11/2024
+-->
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Radhika's Recipes - Yellow Curry</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <script type="text/javascript" src="script.js" defer></script>
+    </head>
+
+    <body>
+        <!--NAV BAR-->
+        <ul>
+            <!--home-->
+            <li><a href="index.html">Home</a></li>
+
+            <!--recipes-->
+            <li>
+                <div class="dropdown">
+                    <button class="recipesBtn">Recipes
+                      <i class="caret-down">&#9660;</i>
+                    </button>
+                <div class="dropdown-content">
+                    <a href="frenchtoast.html">French Toast</a>
+                    <a href="yellowcurry.html">Yellow Curry</a>
+                    <a href="greenpasta.html">Green Pasta</a>
+                </div>
+            </li>
+
+            <!--about-->
+            <li><a href="about.html">About</a></li>
+        </ul>
+
+        <!--MAIN CONTENT-->
+        <!--title-->
+        <h2>Yellow Curry</h2>
+
+        <!--rating-->
+        <span onclick="gfg(1)"
+                class="star">★
+        </span>
+        <span onclick="gfg(2)"
+                class="star">★
+        </span>
+        <span onclick="gfg(3)"
+                class="star">★
+        </span>
+        <span onclick="gfg(4)"
+                class="star">★
+        </span>
+        <span onclick="gfg(5)"
+                class="star">★
+        </span><br><br>
+
+        <!--description (grid)-->
+        <div class="gridContainer">
+            <img class="image" src="images/yellowcurry.jpg" style="width: 200px">
+            <div class="desc">
+                <p style="margin-top: 40px;"><b>Cuisine: Thai</b></p>
+                <p>Serves 3, serving size: 2 bowls</p>
+                <p><i>Total time: 25 mins</i><p><br>
+            </div>
+        </div><br>
+        
+
+        <!--INGREDIENTS-->
+        <!--title & scaling (flexbox)-->
+        <div class="flexContainer">
+            <h3>Ingredients</h3>
+            <button id="0.5x" class="scaleBtn">0.5x</button>
+            <button id="1x" class="scaleBtn">1x</button>
+            <button id="2x" class="scaleBtn">2x</button>
+        </div>
+
+        <!--list-->
+        <input type="checkbox" id="sauce" name="ingredient" value="1">
+        <label for="sauce">1 bottle Trader Joe's <a href="https://www.traderjoes.com/home/products/pdp/thai-style-yellow-curry-sauce-078557">Yellow Curry Sauce</a></label><br>
+            
+        <input type="checkbox" id="carrot" name="ingredient" value="1">
+        <label for="carrot">1 medium carrot</label><br>
+
+        <input type="checkbox" id="potato" name="ingredient" value="1">
+        <label for="potato">1 Yukon golden potato</label><br>
+
+        <input type="checkbox" id="peas" name="ingredient" value="1/3">
+        <label for="peas">1/3 cup frozen peas</label><br>
+        
+        <input type="checkbox" id="tofu" name="ingredient" value="6">
+        <label for="tofu">6 oz extra firm tofu</label><br>
+
+        <input type="checkbox" id="rice" name="ingredient" value="2">
+        <label for="rice">2 cups uncooked rice</label><br>
+
+
+        <!--INSTRUCTIONS-->
+        <h3>Instructions</h3>
+        <ol>
+            <li>Cook rice as desired. Meanwhile, chop veggies and tofu.</li>
+            <li>Bring a large pot to medium heat. Use a neutral oil to stir fry veggies from hardest to softest: carrot, potato, peas.</li>
+            <li>In a small pan, stir fry tofu.</li>
+            <li>Add sauce and tofu to pot, stirring slowly to combine.</li>
+            <li>Let simmer for 1-2 mins. Serve warm over rice.</li>
+        </ol>
+        <hr class="hrInvis">
+
+        
+        <!--FOOTER-->
+        <br><br><div class="footer">
+            <p>© 2025 Radhika Parkhi</p>
+        </div>
+    </body>
+</html>
